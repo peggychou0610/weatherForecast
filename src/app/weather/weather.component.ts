@@ -25,6 +25,6 @@ export class WeatherComponent implements OnInit {
   }
 
   sortBy(key) {
-    this.weather = this.pipe.transform(key, this.weather);
+    this.weather = this.pipe.transform(this.weather, key);
   }
 }
