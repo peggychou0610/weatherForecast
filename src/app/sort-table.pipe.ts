@@ -6,7 +6,7 @@ import { ResultsItem } from './weather/weather.service';
 })
 export class SortTablePipe implements PipeTransform {
 
-  transform(key: number, weather: Array<ResultsItem>): Array<ResultsItem> {
+  transform(weather: Array<ResultsItem>, key: number): Array<ResultsItem> {
     let switching: boolean, i: number, x, y, shouldSwitch: boolean, dir: string, switchcount = 0;
     switching = true;
     dir = 'asc';
@@ -20,17 +20,17 @@ export class SortTablePipe implements PipeTransform {
             y = weather[i + 1]._id;
             break;
         }
-        // if (dir === 'asc') {
+        if (dir === 'asc') {
           if (Number(x.innerHTML) > Number(y.innerHTML)) {
             shouldSwitch = true;
             break;
           }
         // } else if (dir === 'desc') {
-          if (Number(x.innerHTML) < Number(y.innerHTML)) {
-            shouldSwitch = true;
-            break;
-          }
-        // }
+        //   if (Number(x.innerHTML) < Number(y.innerHTML)) {
+        //     shouldSwitch = true;
+        //     break;
+        //   }
+        }
       }
       if (shouldSwitch) {
         weather = this.doSwitch(i, weather);
