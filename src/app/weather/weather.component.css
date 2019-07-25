@@ -1,0 +1,30 @@
+.weeklyWeather {
+  font-family: 'Microsoft JhengHei', 'Apple LiGothic Medium', 'Verdana';
+  color: #333333;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #FFDEC3;
+}
+
+.weeklyWeather td, .weeklyWeather th {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+.weeklyWeather tr:nth-child(odd) {
+  background-color: #FFCCB4;
+}
+
+.weeklyWeather tr:hover {
+  background-color: #FFB7AA;
+  color: white;
+}
+
+.weeklyWeather th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #FF9A9A;
+  color: #333333;
+  cursor: pointer;
+}

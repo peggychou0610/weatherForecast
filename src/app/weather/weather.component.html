@@ -1,0 +1,24 @@
+<table class="weeklyWeather">
+  <tr>
+    <th (click)="sortBy(0)">ID</th>
+    <th>地區</th>
+    <th>天氣狀況</th>
+    <th>最高溫</th>
+    <th>最低溫</th>
+    <th>parameterValue1</th>
+    <th>開始時間</th>
+    <th>結束時間</th>
+  </tr>
+  <ng-container *ngIf="weather.length > 0">
+    <tr *ngFor="let data of weather">
+      <td style="text-align: center;">{{ data._id }}</td>
+      <td style="text-align: center;">{{ data.locationName }}</td>
+      <td>{{ data.parameterName1 }}</td>
+      <td>{{ data.parameterName2 }}°{{ data.parameterUnit2 }}</td>
+      <td>{{ data.parameterName3 }}°{{ data.parameterUnit3 }}</td>
+      <td>{{ data.parameterValue1 }}</td>
+      <td>{{ data.startTime | date: 'y-MM-dd, HH:mm:ss' }}</td>
+      <td>{{ data.endTime | date: 'y-MM-dd, HH:mm:ss' }}</td>
+    </tr>
+  </ng-container>
+</table>
