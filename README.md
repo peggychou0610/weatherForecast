@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## References
+
+Create a Search Pipe to Dynamically Filter results with Angular 4
+https://codeburst.io/create-a-search-pipe-to-dynamically-filter-results-with-angular-4-21fd3a5bec5c
+
+Angular Pipes
+https://angular.io/guide/pipes
+
+Angular - Introduction to modules
+https://angular.io/guide/architecture-modules
+
+Angular - HTTP client
+https://angular.io/guide/http
+
+Sharing data between angular components
+https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/
