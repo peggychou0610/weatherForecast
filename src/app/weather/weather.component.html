@@ -10,7 +10,7 @@
     <th>結束時間</th>
   </tr>
   <ng-container *ngIf="weather.length > 0">
-    <tr *ngFor="let data of weather">
+    <tr *ngFor="let data of weather | filter: childMessage">
       <td style="text-align: center;">{{ data._id }}</td>
       <td style="text-align: center;">{{ data.locationName }}</td>
       <td>{{ data.parameterName1 }}</td>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { WeatherService, ResultsItem } from './weather.service';
 import { SortTablePipe } from '../sort-table.pipe';
@@ -9,6 +9,7 @@ import { SortTablePipe } from '../sort-table.pipe';
   styleUrls: ['./weather.component.css']
 })
 export class WeatherComponent implements OnInit {
+  @Input() childMessage: string;
   weather: Array<ResultsItem>;
   pipe: SortTablePipe;
 
