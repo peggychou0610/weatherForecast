@@ -15,7 +15,7 @@ export class FilterPipe implements PipeTransform {
     }
 
     return items.filter(it => {
-      return it.includes(searchText);
+      return it.locationName.includes(searchText);
     });
   }
 
