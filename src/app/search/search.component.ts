@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
           <th colspan="2" style="text-align: left;">查詢條件</th>
         </tr>
         <tr>
-          <td>搜尋：<input (keyup)="onKey($event)" type="text" placeholder="Search for..."></td>
+          <td>地區：<input (keyup)="onKey($event)" type="text" placeholder="Search for..."></td>
           <td>日期：<input type="date"></td>
         </tr>
       </table>
@@ -27,6 +27,7 @@ export class SearchComponent implements OnInit {
   }
 
   onKey(event) {
+    // childMessage: weather component
     this.parentMessage = event.target.value;
   }
 
