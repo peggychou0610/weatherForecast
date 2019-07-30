@@ -9,8 +9,8 @@ import { WeatherService } from './weather/weather.service';
 import { SearchComponent } from './search/search.component';
 import { SearchService } from './search/search.service';
 import { TodayComponent } from './today/today.component';
-import { SortTablePipe } from './sort-table.pipe';
 import { FilterPipe } from './filter.pipe';
+import { TodayService } from './today/today.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,6 @@ import { FilterPipe } from './filter.pipe';
     WeatherComponent,
     SearchComponent,
     TodayComponent,
-    SortTablePipe,
     FilterPipe
   ],
   imports: [
@@ -28,6 +27,7 @@ import { FilterPipe } from './filter.pipe';
   ],
   providers: [
     WeatherService,
+    TodayService,
     SearchService
   ],
   bootstrap: [
