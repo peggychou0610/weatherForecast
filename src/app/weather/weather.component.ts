@@ -37,6 +37,7 @@ import { WeatherService, ResultsItem } from './weather.service';
 })
 export class WeatherComponent implements OnInit {
   @Input() childMessage: string;
+  @Input() childDate: string;
   weather: Array<ResultsItem>;
 
   constructor(private service: WeatherService) { }
