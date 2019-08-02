@@ -42,3 +42,6 @@ https://angular.io/guide/http
 
 Sharing data between angular components
 https://angularfirebase.com/lessons/sharing-data-between-angular-components-four-methods/
+
+Angular Filter Checkboxes
+https://long2know.com/2017/04/angular-filter-checkboxes/
